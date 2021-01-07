@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLSP Project Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+</head>
+
+<body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'> </script>
+  
+    <section class="hero is-dark is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+              <h1 class="title is-2 has-text-centered">Voice Conversion</h1>
+              <h2 class="subtitle is-5 has-text-centered">MLSP Project, Istanbul Technical University<br>Fall 2020</h2> 
+              <h3 class="subtitle is-5 has-text-centered">Selahaddin HONİ &nbsp|&nbsp İsmail Melik TÜRKER &nbsp|&nbsp İmran Çağla EYÜBOĞLU</h3> 
+        </div>
+      </div>
+    </section>
+  
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-5" style="text-align: left;">Reference Paper & Implementation</h1>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-white">
+    <div class="hero-body"  style="padding-top: 16px">
+      <div class="container">
+        <p>
+          Previously determined reference network architecture (CycleGAN) is changed due to high performance GPU need. Using convolutional-based network 
+          instead of generative-advarsarial one is much more convenient to realize with student's budget-friendly computers.<br><br>
+          <a href="Trainable-TTS-DC-Based-1710.08969.pdf" target="_blank">[Paper link]</a><br>   
+          Hideyuki Tachibana, Katsuya Uenoyama and Shunsuke Aihara<br>
+          <strong>Efficiently Trainable Text-to-Speech System Based on Deep Convolutional Networks with Guided Attention</strong><br>
+          <br>
+          <a href="https://github.com/Kyubyong/dc_tts" target="_blank">[Implementation link]</a><br>   
+          Park Kyubyong's work<br>
+          <strong>A TensorFlow Implementation of DC-TTS: yet another text-to-speech model</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-5" style="text-align: left;">Early Results</h1>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-white">
+    <div class="hero-body"  style="padding-top: 16px">
+      <div class="container">
+         
+        <p>
+          A famous speech dataset, 'The LJ',  is used to train this model. The dataset contains 1-to-10 seconds of speech clips in total of 24-hours and 
+          their transcriptions.<br><br>Here is the first synthesized sample:<br><br>
+        </p>
+        <audio controls>
+            <source src="lj-sample-1.wav" type="audio/mpeg">
+        </audio>
+        <p><strong>LJ:</strong> "This voice sample is generated for machine learning course in Istanbul Technical University."<br></p>       
+        <p><br>Note: Project in progress!</p> 
+
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        January, 2021
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
