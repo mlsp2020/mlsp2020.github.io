@@ -20,7 +20,23 @@
         </div>
       </div>
     </section>
-  
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-5" style="text-align: left;">Project Aim</h1>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-white">
+      <div class="hero-body"  style="padding-top: 16px">
+        <div class="container">
+          <p>        
+            In the project, it is aimed to transfer the trained voice style of a famous person to given input voice. Literature review and progress report is 
+            <a href="project-progress-report.pdf" target="_blank">here.</a><br> 
+          </p>
+        </div>
+      </div>
+    </section>
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
@@ -42,7 +58,7 @@
           <br>
           <a href="https://github.com/mlsp2020/mlsp-voice-conversion" target="_blank">[Project]</a><br>   
           Our Work<br>
-          <strong>GitHub: mlsp2020/mlsp-voice-conversion</strong> ! update later
+          <strong>MLSP Term Project: Voice Conversion</strong>
         </p>
       </div>
     </div>
@@ -59,9 +75,11 @@
     <div class="hero-body"  style="padding-top: 16px">
       <div class="container">     
         <p>
-          <a href="dataset" target="_blank">[Dataset]</a><br>  
-          The power of this network comes from its less data need, such that we have only used 94 seconds of speech sample of Ece Uner.<br>
-          Raw data source link of the speech is <a href="https://youtu.be/GcSGW-Uv6wE?t=22" target="_blank">here</a><br>  
+          <strong>Target:</strong> 
+          The power of this network comes from its less data need, such that we have only used 94 seconds (10 clips duration of 2-to-16 sec) of speech sample of Ece Uner.<br>
+          <strong>Source:</strong> 
+          The transcription of target speech is vocalized by Google's text-to-speech WaveNet voice. <br><hr>
+          The dataset link is <a href="https://drive.google.com/drive/folders/1bdSAbpLWZiw6tz3zrpNq2OhFxhPdLyhI?usp=sharing" target="_blank">here.</a><br>  
         </p>
       </div>
     </div>
@@ -70,7 +88,7 @@
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title is-5" style="text-align: left;">Early Results</h1>
+        <h1 class="title is-5" style="text-align: left;">Result</h1>
       </div>
     </div>
   </section>
@@ -78,15 +96,30 @@
     <div class="hero-body"  style="padding-top: 16px">
       <div class="container">
          
-        <p>
-        Here is the first synthesized sample:<br><br>
-        </p>
-        <audio controls>
-            <source src="F-GGL-00.wav" type="audio/mpeg">
-        </audio>
-        <p><strong>ECE:</strong> "Evet, ben Ece Üner ve bu ses yapay zeka ile seslendirildi."<br></p>       
-        <p><br>Note: Project in progress!</p> 
-
+        <table class="table" style="margin-left:auto;margin-right:auto;">
+          <thead>
+            <tr>
+              <th></th>
+              <th style="text-align: center;">Source</th>
+              <th style="text-align: center;">Target</th>
+              <th style="text-align: center;">CycleGAN-VC</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th style="vertical-align: middle;">Sample 1</th>
+            <td><audio controls><source src="F-GGL-01-0.wav" type="audio/mpeg"></audio></th>
+            <td><audio controls><source src="F-ECE-01.wav" type="audio/mpeg"></audio></td>
+            <td><audio controls><source src="F-GGL-01.wav" type="audio/mpeg"></audio></td>
+           </tr>
+           <tr>
+            <th style="vertical-align: middle;">Sample 2</th>
+            <td><audio controls><source src="F-GGL-00-0.wav" type="audio/mpeg"></audio></th>
+            <td style="vertical-align: middle; text-align: center;">None</td>
+            <td><audio controls><source src="F-GGL-00.wav" type="audio/mpeg"></audio></td>
+           </tr>
+        </tbody>
+      </table>
       </div>
     </div>
   </section>
